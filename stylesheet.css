@@ -1,7 +1,22 @@
+body {
+    margin: 0;
+    border: 25px solid darkgray;
+    padding: 10px;
+}
 
+.navbar{
+    background-color: rgb(128, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1px;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 50px;
+    grid-template-columns: repeat(5, 125px);
+    grid-template-areas:
+    ". site account order contact";
+}
 .container{
     display: grid;
-    border: 25px solid darkgrey;
     gap: 10px;
     grid-template-columns: repeat(5, auto);
     grid-template-rows: auto/* 50px 50px 140px 240px 100px 100px 100px 100px */;
@@ -15,6 +30,23 @@
     "props santa trickOrTreat1 trickOrTreat2 witchGoblinGhoul"
     "blackMask mardiGras mardiGras . address";
 
+}
+
+
+.item1 {
+    grid-area: site;
+}
+
+.item2 {
+    grid-area: account;
+}
+
+.item3 {
+    grid-area: order;
+}
+
+.item4 {
+    grid-area: contact;
 }
 
 .cell-a {
@@ -103,4 +135,8 @@
 
 .cell-v {
     grid-area: address;
+    font-family: Verdana;
+    padding: 10px;
+    color: rgb(128, 0, 0);
+    text-align: right;
 }
