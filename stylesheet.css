@@ -1,142 +1,311 @@
-body {
-    margin: 0;
-    border: 25px solid darkgray;
-    padding: 10px;
+@media(min-width: 400px) {
+
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        border: 5px solid darkgrey;
+    }
+    
+    .cell {
+        width: 100%;
+        height: auto;
+    }
+    
+    .navbar{
+        background-color: rgb(128, 0, 0);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 1px;
+        display: grid;
+        align-items: center;
+        grid-template-rows: 50px;
+        grid-template-columns: repeat(5, 125px);
+        grid-template-areas:
+        ". site account order contact";
+    }
+    .container{
+        display: grid;
+        gap: 1px;
+        grid-template-columns: repeat(5, auto);
+        justify-items: stretch;
+        width: calc(100% - 20px);
+        grid-template-rows: auto/* 50px 50px 140px 240px 100px 100px 100px 100px */;
+        grid-template-areas: 
+        "logo logo logo logo facebook"
+        "logo logo logo logo twitter"
+        "logo logo logo logo anonymous"
+        "birthday birthday joker allAges pinkWig"
+        "musical superSale superSale candy greatHats"
+        "musical santa classic classic freeShipping"
+        "props santa trickOrTreat1 trickOrTreat2 witchGoblinGhoul"
+        "blackMask mardiGras mardiGras . address";
+    
+    }
+    
+    
+    .item1 {
+        grid-area: site;
+    }
+    
+    .item2 {
+        grid-area: account;
+    }
+    
+    .item3 {
+        grid-area: order;
+    }
+    
+    .item4 {
+        grid-area: contact;
+    }
+    
+    .cell-a {
+        grid-area: facebook;
+    }
+    
+    .cell-b {
+        grid-area: twitter;
+    }
+    
+    .cell-c {
+        grid-area: anonymous;
+    }
+    
+    .cell-d {
+        grid-area: birthday;
+    }
+    
+    .cell-e {
+        grid-area: joker;
+    }
+    
+    .cell-f {
+        grid-area: allAges;
+    }
+    
+    .cell-g {
+        grid-area: pinkWig;
+    }
+    
+    .cell-h {
+        grid-area: musical;
+    }
+    
+    .cell-i {
+        grid-area: superSale;
+    }
+    
+    .cell-j {
+        grid-area: candy;
+    }
+    
+    .cell-k {
+        grid-area: greatHats;
+    }
+    
+    .cell-l {
+        grid-area: props;
+    }
+    
+    .cell-m {
+        grid-area: santa;
+    }
+    
+    .cell-n {
+        grid-area: classic;
+    }
+    
+    .cell-o {
+        grid-area: freeShipping;
+    }
+    
+    .cell-p {
+        grid-area: trickOrTreat1;
+    }
+    
+    .cell-q {
+        grid-area: trickOrTreat2;
+    }
+    
+    .cell-r {
+        grid-area: witchGoblinGhoul;
+    }
+    
+    .cell-s {
+        grid-area: blackMask;
+    }
+    
+    .cell-t {
+        grid-area: mardiGras;
+    }
+    
+    .cell-u {
+        grid-area: logo;
+    }
+    
+    .cell-v {
+        grid-area: address;
+        font-family: Verdana;
+        padding: 10px;
+        color: rgb(128, 0, 0);
+        text-align: right;
+    }
+    
+
 }
 
-.navbar{
-    background-color: rgb(128, 0, 0);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 1px;
-    display: grid;
-    align-items: center;
-    grid-template-rows: 50px;
-    grid-template-columns: repeat(5, 125px);
-    grid-template-areas:
-    ". site account order contact";
-}
-.container{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: auto/* 50px 50px 140px 240px 100px 100px 100px 100px */;
-    grid-template-areas: 
-    "logo logo logo logo facebook"
-    "logo logo logo logo twitter"
-    "logo logo logo logo anonymous"
-    "birthday birthday joker allAges pinkWig"
-    "musical superSale superSale candy greatHats"
-    "musical santa classic classic freeShipping"
-    "props santa trickOrTreat1 trickOrTreat2 witchGoblinGhoul"
-    "blackMask mardiGras mardiGras . address";
-
-}
 
 
-.item1 {
-    grid-area: site;
-}
+@media screen and (max-width: 400px) {
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        border: 5px solid darkgrey;
+    }
+    
+    .cell {
+        width: 100%;
+        height: auto;
+    }
+    
+    .navbar{
+        background-color: rgb(128, 0, 0);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 1px;
+        display: grid;
+        align-items: center;
+        grid-template-rows: 50px;
+        grid-template-columns: repeat(4, auto);
+        grid-template-areas:
+        "site account order contact";
+    }
+    .container{
+        display: grid;
+        gap: 1px;
+        grid-template-columns: repeat(5, auto);
+        justify-items: stretch;
+        width: calc(100% - 20px);
+        grid-template-rows: auto/* 50px 50px 140px 240px 100px 100px 100px 100px */;
+        grid-template-areas: 
+        "logo logo logo logo facebook"
+        "logo logo logo logo twitter"
+        "logo logo logo logo anonymous"
+        "birthday birthday joker allAges pinkWig"
+        "musical superSale superSale candy greatHats"
+        "musical santa classic classic freeShipping"
+        "props santa trickOrTreat1 trickOrTreat2 witchGoblinGhoul"
+        "blackMask mardiGras mardiGras . .";
+    
+    }
+    
+    
+    .item1 {
+        grid-area: site;
+    }
+    
+    .item2 {
+        grid-area: account;
+    }
+    
+    .item3 {
+        grid-area: order;
+    }
+    
+    .item4 {
+        grid-area: contact;
+    }
+    
+    .cell-a {
+        grid-area: facebook;
+    }
+    
+    .cell-b {
+        grid-area: twitter;
+    }
+    
+    .cell-c {
+        grid-area: anonymous;
+    }
+    
+    .cell-d {
+        grid-area: birthday;
+    }
+    
+    .cell-e {
+        grid-area: joker;
+    }
+    
+    .cell-f {
+        grid-area: allAges;
+    }
+    
+    .cell-g {
+        grid-area: pinkWig;
+    }
+    
+    .cell-h {
+        grid-area: musical;
+    }
+    
+    .cell-i {
+        grid-area: superSale;
+    }
+    
+    .cell-j {
+        grid-area: candy;
+    }
+    
+    .cell-k {
+        grid-area: greatHats;
+    }
+    
+    .cell-l {
+        grid-area: props;
+    }
+    
+    .cell-m {
+        grid-area: santa;
+    }
+    
+    .cell-n {
+        grid-area: classic;
+    }
+    
+    .cell-o {
+        grid-area: freeShipping;
+    }
+    
+    .cell-p {
+        grid-area: trickOrTreat1;
+    }
+    
+    .cell-q {
+        grid-area: trickOrTreat2;
+    }
+    
+    .cell-r {
+        grid-area: witchGoblinGhoul;
+    }
+    
+    .cell-s {
+        grid-area: blackMask;
+    }
+    
+    .cell-t {
+        grid-area: mardiGras;
+    }
+    
+    .cell-u {
+        grid-area: logo;
+    }
+    
+    .cell-v {
+        grid-area: address;
+        font-family: Verdana;
+        padding: 10px;
+        color: rgb(128, 0, 0);
+        text-align: right;
+    }
 
-.item2 {
-    grid-area: account;
-}
-
-.item3 {
-    grid-area: order;
-}
-
-.item4 {
-    grid-area: contact;
-}
-
-.cell-a {
-    grid-area: facebook;
-}
-
-.cell-b {
-    grid-area: twitter;
-}
-
-.cell-c {
-    grid-area: anonymous;
-}
-
-.cell-d {
-    grid-area: birthday;
-}
-
-.cell-e {
-    grid-area: joker;
-}
-
-.cell-f {
-    grid-area: allAges;
-}
-
-.cell-g {
-    grid-area: pinkWig;
-}
-
-.cell-h {
-    grid-area: musical;
-}
-
-.cell-i {
-    grid-area: superSale;
-}
-
-.cell-j {
-    grid-area: candy;
-}
-
-.cell-k {
-    grid-area: greatHats;
-}
-
-.cell-l {
-    grid-area: props;
-}
-
-.cell-m {
-    grid-area: santa;
-}
-
-.cell-n {
-    grid-area: classic;
-}
-
-.cell-o {
-    grid-area: freeShipping;
-}
-
-.cell-p {
-    grid-area: trickOrTreat1;
-}
-
-.cell-q {
-    grid-area: trickOrTreat2;
-}
-
-.cell-r {
-    grid-area: witchGoblinGhoul;
-}
-
-.cell-s {
-    grid-area: blackMask;
-}
-
-.cell-t {
-    grid-area: mardiGras;
-}
-
-.cell-u {
-    grid-area: logo;
-}
-
-.cell-v {
-    grid-area: address;
-    font-family: Verdana;
-    padding: 10px;
-    color: rgb(128, 0, 0);
-    text-align: right;
 }
